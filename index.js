@@ -1,4 +1,5 @@
 var http = require('http');
+var newrelic = require('newrelic');
 
 var server = http.createServer(function(req, res) {
   res.writeHead(200, {'Content-Type' : 'text/html'});
